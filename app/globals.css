@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "interBold";
+  src: url("../assets/fonts/inter/Inter-Bold.ttf");
+}
+
+@font-face {
+  font-family: "interSemiBold";
+  src: url("../assets/fonts/inter/Inter-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "interRegular";
+  src: url("../assets/fonts/inter/Inter-Regular.ttf");
+}
+
+@font-face {
+  font-family: "outfitRegular";
+  src: url("../assets//fonts/outfit/Outfit-Regular.ttf");
+}
+
+@font-face {
+  font-family: "outfitSemiBold";
+  src: url("../assets/fonts/outfit/Outfit-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "outfitBold";
+  src: url("../assets/fonts/outfit/Outfit-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Jua";
+  src: url("../assets/fonts/jua/Jua-Regular.ttf");
+}
