@@ -1,7 +1,13 @@
+import Navbar from "@/components/navbar/navbar";
+import Hero from "@/components/hero/hero";
+
 export default function Home() {
   return (
-    <main>
-      <h1>Halo Dunia</h1>
-    </main>
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+      </main>
+    </>
   );
 }
