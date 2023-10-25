@@ -11,8 +11,6 @@ export const Nav = styled.nav`
     width: 100vw;
     display: flex;
     justify-content: center;
-    .nav-wrapper {
-    }
   }
 `;
 
@@ -20,6 +18,9 @@ export const NavResponsive = styled.div`
   height: 100%;
   @media (width >= 1488px) {
     width: 75rem;
+  }
+  @media (width <= 748px) {
+    width: 100%;
   }
 `;
 
@@ -29,10 +30,8 @@ export const NavWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* @media (width >= 1488px) {
-    background-color: greenyellow;
-    width: 75rem;
-  } */
+  @media (width <= 748px) {
+  }
 `;
 
 export const IconWrapper = styled.div`
@@ -46,6 +45,9 @@ export const IconWrapper = styled.div`
   }
   .icon {
     height: 5rem;
+  }
+  @media (width <= 748px) {
+    width: 10rem;
   }
 `;
 

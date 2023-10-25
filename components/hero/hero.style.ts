@@ -12,6 +12,9 @@ export const Container = styled.div`
   @media (width >= 1488px) {
     width: 100vw;
   }
+  @media (width <= 748px) {
+    width: 100%;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -26,6 +29,9 @@ export const Wrapper = styled.div`
   @media (width >= 1488px) {
     width: 75rem;
   }
+  @media (width <= 748px) {
+    align-items: center;
+  }
 `;
 
 export const Information = styled.div`
@@ -34,6 +40,12 @@ export const Information = styled.div`
   margin: 0 5rem 0 0;
   @media (width <= 1029px) {
     align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+  @media (width <= 748px) {
+    width: 100%;
+    margin: 0;
   }
 `;
 
@@ -44,6 +56,11 @@ export const HeroTitle = styled.h1`
   @media (width <= 1029px) {
     width: 40rem;
     text-align: center;
+    font-size: 2.8rem;
+  }
+  @media (width <= 688px) {
+    width: 90%;
+    font-size: 2rem;
   }
 `;
 
@@ -57,6 +74,10 @@ export const HeroText = styled.p`
     margin: 1rem 0 1rem 0;
     text-align: center;
   }
+  @media (width <= 748px) {
+    width: 90%;
+    font-size: 1rem;
+  }
 `;
 
 export const MobileImg = styled.div`
@@ -66,11 +87,14 @@ export const MobileImg = styled.div`
     justify-content: center;
     width: 100%;
   }
+
   img {
     height: 25rem;
     width: auto;
-    @media (width <= 1029px) {
-      margin: 0 5rem 0 0;
+    @media (width <= 548px) {
+      margin: 0;
+      height: auto;
+      width: 100%;
     }
   }
 `;
@@ -108,6 +132,10 @@ export const SearchInfo = styled.div`
     bottom: -6rem;
     border-radius: 5rem;
     padding: 0.4rem 2rem;
+  }
+  @media (width <= 748px) {
+    width: 100%;
+    display: none;
   }
 `;
 
