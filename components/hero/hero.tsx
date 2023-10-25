@@ -70,7 +70,7 @@ export default function Hero() {
             </SearchInfo>
           </Information>
           <ImageWrapper>
-            <Image className="dekstop" src={Romantic} alt="" />
+            <Image src={Romantic} alt="" />
           </ImageWrapper>
         </Wrapper>
       </Container>
