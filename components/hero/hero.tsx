@@ -14,6 +14,7 @@ import {
   LocationContainer,
   DateContainer,
   SearchImg,
+  MobileImg,
   PriceContainer,
 } from "./hero.style";
 import Romantic from "@/assets/hero/Romantic.svg";
@@ -26,6 +27,9 @@ export default function Hero() {
     <Padding>
       <Container>
         <Wrapper>
+          <MobileImg>
+            <Image src={Romantic} alt="" />
+          </MobileImg>
           <Information>
             <HeroTitle>Experience the world, one adventure at a time</HeroTitle>
             <HeroText>
@@ -66,7 +70,7 @@ export default function Hero() {
             </SearchInfo>
           </Information>
           <ImageWrapper>
-            <Image src={Romantic} alt="" />
+            <Image className="dekstop" src={Romantic} alt="" />
           </ImageWrapper>
         </Wrapper>
       </Container>

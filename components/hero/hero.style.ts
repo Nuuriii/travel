@@ -6,6 +6,9 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (width <= 1029px) {
+    padding: 9rem 0 0 0;
+  }
   @media (width >= 1488px) {
     width: 100vw;
   }
@@ -17,6 +20,9 @@ export const Wrapper = styled.div`
   position: relative;
   display: flex;
   align-items: center;
+  @media (width <= 1029px) {
+    flex-direction: column;
+  }
   @media (width >= 1488px) {
     width: 75rem;
   }
@@ -26,12 +32,19 @@ export const Information = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 5rem 0 0;
+  @media (width <= 1029px) {
+    align-items: center;
+  }
 `;
 
 export const HeroTitle = styled.h1`
   font-family: "Jua", sans-serif;
   color: #263238;
   font-size: 3.2rem;
+  @media (width <= 1029px) {
+    width: 40rem;
+    text-align: center;
+  }
 `;
 
 export const HeroText = styled.p`
@@ -39,10 +52,34 @@ export const HeroText = styled.p`
   color: rgba(38, 50, 56, 0.5);
   font-size: 1.1rem;
   font-family: "interRegular", sans-serif;
+  @media (width <= 1029px) {
+    width: 37rem;
+    margin: 1rem 0 1rem 0;
+    text-align: center;
+  }
+`;
+
+export const MobileImg = styled.div`
+  display: none;
+  @media (width <= 1029px) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  img {
+    height: 25rem;
+    width: auto;
+    @media (width <= 1029px) {
+      margin: 0 5rem 0 0;
+    }
+  }
 `;
 
 export const ImageWrapper = styled.div`
   display: flex;
+  @media (width <= 1029px) {
+    display: none;
+  }
   img {
     height: 31rem;
     width: auto;
@@ -67,6 +104,11 @@ export const SearchInfo = styled.div`
   box-shadow: 0px 6px 15px 0px #ddeffd;
   border-radius: 2.9rem;
   background-color: #fff;
+  @media (width <= 1029px) {
+    bottom: -6rem;
+    border-radius: 5rem;
+    padding: 0.4rem 2rem;
+  }
 `;
 
 export const TitleInfo = styled.span`
