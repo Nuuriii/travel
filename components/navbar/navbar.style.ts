@@ -9,6 +9,7 @@ export const Nav = styled.nav`
 `;
 
 export const NavWrapper = styled.div`
+  width: 100%;
   padding: 1rem 0;
   display: flex;
   justify-content: space-between;
@@ -29,30 +30,65 @@ export const IconWrapper = styled.div`
   }
 `;
 
-export const Menu = styled.div`
+export const HamburgerIcon = styled.div<{ $height: boolean }>`
+  display: none;
+  justify-content: flex-end;
+  .hamburger {
+    height: 4rem;
+    width: auto;
+  }
+  .close {
+    height: 2.5rem;
+    width: auto;
+  }
+  @media (width <= 1029px) {
+    display: flex;
+  }
+`;
+
+export const Menu = styled.div<{ $show: boolean }>`
   display: flex;
   justify-content: space-between;
   align-items: center;
   @media (width <= 1029px) {
+    padding: 1rem 1rem;
     position: absolute;
-    top: -100%;
+    border-radius: 0.5rem;
+    top: 5rem;
+    right: ${(props) => (props.$show ? "1.8rem" : "-100%")};
+    transition: all 0.3s;
+    background-color: #90caf9;
+    flex-direction: column;
+    align-items: start;
   }
 `;
 
 export const ListWrapper = styled.ul`
   display: flex;
   list-style: none;
+  @media (width <= 1029px) {
+    flex-direction: column;
+  }
 `;
 
 export const List = styled.li`
   margin: 0 5rem 0 0;
+  @media (width <= 1029px) {
+    margin-bottom: 0.5rem;
+  }
   a {
     font-size: 1.2rem;
     text-decoration: none;
     color: #263238;
+    @media (width <= 1029px) {
+      color: white;
+    }
   }
   a:hover {
     color: #75a3c8;
+    @media (width <= 1029px) {
+      color: #263238;
+    }
   }
 `;
 
@@ -60,12 +96,31 @@ export const AuthBtn = styled.div`
   display: flex;
   align-items: center;
   font-size: 1.2rem;
+  @media (width <= 1029px) {
+    margin-top: 1rem;
+  }
   .login {
+    height: 2.5rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
     margin: 0 2rem 0 0;
     text-decoration: none;
     color: #75a3c8;
     &:hover {
       color: #263238;
+    }
+    @media (width <= 1029px) {
+      margin: 0 1rem 0 0;
+      color: #75a3c8;
+      background-color: #fff;
+      &:hover {
+        color: #fff;
+        border: 2px solid #fff;
+        background-color: #90caf9;
+      }
     }
   }
   .signup {
@@ -82,6 +137,9 @@ export const AuthBtn = styled.div`
       background-color: #fff;
       border: 2px solid #90caf9;
       color: #90caf9;
+    }
+    @media (width <= 1029px) {
+      border: 2px solid #fff;
     }
   }
 `;

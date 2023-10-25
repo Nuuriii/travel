@@ -1,7 +1,9 @@
 import Image from "next/image";
 import Icon from "@/assets/navbar/Icon.svg";
+import Hamburger from "@/assets/navbar/hamburger.svg";
+import Close from "@/assets/navbar/close.svg";
 import Link from "next/link";
-import Padding from "../padding/padding";
+import Padding from "@/components/padding/padding";
 import {
   Nav,
   IconWrapper,
@@ -9,10 +11,18 @@ import {
   List,
   AuthBtn,
   NavWrapper,
+  HamburgerIcon,
   Menu,
 } from "./navbar.style";
+import { useState } from "react";
 
 export default function Navbar() {
+  const [Show, setShow] = useState(false);
+
+  const handleShow = () => {
+    setShow(!Show);
+  };
+
   return (
     <Nav>
       <Padding>
@@ -22,7 +32,10 @@ export default function Navbar() {
               <Image className="icon" src={Icon} alt="" />
             </Link>
           </IconWrapper>
-          <Menu>
+          <HamburgerIcon $height={Show} onClick={handleShow}>
+            <Image className="hamburger" src={Hamburger} alt="" />
+          </HamburgerIcon>
+          <Menu $show={Show}>
             <ListWrapper>
               <List>
                 <Link href="/">Home</Link>
