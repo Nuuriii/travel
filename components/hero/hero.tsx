@@ -16,6 +16,7 @@ import {
   SearchImg,
   MobileImg,
   PriceContainer,
+  LocationNow,
 } from "./hero.style";
 import Romantic from "@/assets/hero/Romantic.svg";
 import Chevron from "@/assets/hero/chevronDown.svg";
@@ -69,6 +70,10 @@ export default function Hero() {
               </SearchImg>
             </SearchInfo>
           </Information>
+          <LocationNow>
+            <Image src={Location} alt="location icon" />
+            <span>Maui, Hawaii</span>
+          </LocationNow>
           <ImageWrapper>
             <Image src={Romantic} alt="" />
           </ImageWrapper>

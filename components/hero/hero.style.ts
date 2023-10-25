@@ -52,6 +52,7 @@ export const Information = styled.div`
 export const HeroTitle = styled.h1`
   font-family: "Jua", sans-serif;
   color: #263238;
+  font-weight: 400;
   font-size: 3.2rem;
   @media (width <= 1029px) {
     width: 40rem;
@@ -96,6 +97,36 @@ export const MobileImg = styled.div`
       height: auto;
       width: 100%;
     }
+  }
+`;
+
+export const LocationNow = styled.button`
+  padding: 0.2rem 1rem;
+  position: absolute;
+  top: 30%;
+  left: 46%;
+  display: flex;
+  align-items: center;
+  font-family: "outfitRegular", sans-serif;
+  border: 2px solid #ddeffd;
+  border-radius: 3rem;
+  background: #fff;
+  cursor: pointer;
+  font-size: 1.1rem;
+  @media (width <= 1029px) {
+    top: 2rem;
+    left: 40%;
+  }
+  @media (width <= 688px) {
+    left: 1rem;
+    top: 3.5rem;
+    font-size: 0.8rem;
+  }
+  &:hover {
+    transform: scale(1.023);
+  }
+  &:active {
+    transform: scale(0.95);
   }
 `;
 
