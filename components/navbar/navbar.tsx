@@ -8,6 +8,7 @@ import {
   Nav,
   IconWrapper,
   ListWrapper,
+  NavResponsive,
   List,
   AuthBtn,
   NavWrapper,
@@ -25,42 +26,48 @@ export default function Navbar() {
 
   return (
     <Nav>
-      <Padding>
-        <NavWrapper>
-          <IconWrapper>
-            <Link href="/">
-              <Image className="icon" src={Icon} alt="travel icon" />
-            </Link>
-          </IconWrapper>
-          <HamburgerIcon $height={Show} onClick={handleShow}>
-            <Image className="hamburger" src={Hamburger} alt="hamburger icon" />
-          </HamburgerIcon>
-          <Menu $show={Show}>
-            <ListWrapper>
-              <List>
-                <Link href="/">Home</Link>
-              </List>
-              <List>
-                <Link href="/">About</Link>
-              </List>
-              <List>
-                <Link href="/">Trips</Link>
-              </List>
-              <List>
-                <Link href="/">Services</Link>
-              </List>
-            </ListWrapper>
-            <AuthBtn>
-              <Link className="login" href={"/"}>
-                Login
+      <NavResponsive>
+        <Padding>
+          <NavWrapper>
+            <IconWrapper>
+              <Link href="/">
+                <Image className="icon" src={Icon} alt="travel icon" />
               </Link>
-              <Link className="signup" href={"/"}>
-                Sign up
-              </Link>
-            </AuthBtn>
-          </Menu>
-        </NavWrapper>
-      </Padding>
+            </IconWrapper>
+            <HamburgerIcon $height={Show} onClick={handleShow}>
+              <Image
+                className="hamburger"
+                src={Hamburger}
+                alt="hamburger icon"
+              />
+            </HamburgerIcon>
+            <Menu $show={Show}>
+              <ListWrapper>
+                <List>
+                  <Link href="/">Home</Link>
+                </List>
+                <List>
+                  <Link href="/">About</Link>
+                </List>
+                <List>
+                  <Link href="/">Trips</Link>
+                </List>
+                <List>
+                  <Link href="/">Services</Link>
+                </List>
+              </ListWrapper>
+              <AuthBtn>
+                <Link className="login" href={"/"}>
+                  Login
+                </Link>
+                <Link className="signup" href={"/"}>
+                  Sign up
+                </Link>
+              </AuthBtn>
+            </Menu>
+          </NavWrapper>
+        </Padding>
+      </NavResponsive>
     </Nav>
   );
 }

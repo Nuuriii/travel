@@ -6,6 +6,21 @@ export const Nav = styled.nav`
   backdrop-filter: blur(12px);
   font-weight: 900;
   font-family: "outfitRegular", serif;
+  z-index: 30;
+  @media (width >= 1488px) {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    .nav-wrapper {
+    }
+  }
+`;
+
+export const NavResponsive = styled.div`
+  height: 100%;
+  @media (width >= 1488px) {
+    width: 75rem;
+  }
 `;
 
 export const NavWrapper = styled.div`
@@ -14,6 +29,10 @@ export const NavWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* @media (width >= 1488px) {
+    background-color: greenyellow;
+    width: 75rem;
+  } */
 `;
 
 export const IconWrapper = styled.div`
