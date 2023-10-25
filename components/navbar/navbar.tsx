@@ -29,11 +29,11 @@ export default function Navbar() {
         <NavWrapper>
           <IconWrapper>
             <Link href="/">
-              <Image className="icon" src={Icon} alt="" />
+              <Image className="icon" src={Icon} alt="travel icon" />
             </Link>
           </IconWrapper>
           <HamburgerIcon $height={Show} onClick={handleShow}>
-            <Image className="hamburger" src={Hamburger} alt="" />
+            <Image className="hamburger" src={Hamburger} alt="hamburger icon" />
           </HamburgerIcon>
           <Menu $show={Show}>
             <ListWrapper>
