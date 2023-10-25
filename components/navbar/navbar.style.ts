@@ -33,13 +33,10 @@ export const IconWrapper = styled.div`
 export const HamburgerIcon = styled.div<{ $height: boolean }>`
   display: none;
   justify-content: flex-end;
-  .hamburger {
+  img {
+    width: auto;
     height: 4rem;
-    width: auto;
-  }
-  .close {
-    height: 2.5rem;
-    width: auto;
+    cursor: pointer;
   }
   @media (width <= 1029px) {
     display: flex;
