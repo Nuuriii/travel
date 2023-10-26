@@ -28,9 +28,11 @@ const TripList = () => {
   };
 
   const handleEllipse = (select: string | null, name: string) => {
-    return select === name || (select === null && name === "Hot Deals")
-      ? Ellipse
-      : "";
+    return select === name || (select === null && name === "Hot Deals") ? (
+      <Image src={Ellipse} alt="ellipse" />
+    ) : (
+      ""
+    );
   };
 
   return (
@@ -43,8 +45,7 @@ const TripList = () => {
           key={index}
         >
           <span onClick={() => handleClick(trip.name)}>{trip.name}</span>
-
-          <Image src={handleEllipse(selectedTrip, trip.name)} alt="" />
+          {handleEllipse(selectedTrip, trip.name)}
         </BtnType>
       ))}
     </TypeWrapper>
