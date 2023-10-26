@@ -29,7 +29,7 @@ export default function Hero() {
       <Container>
         <Wrapper>
           <MobileImg>
-            <Image src={Romantic} alt="" />
+            <Image src={Romantic} alt="romantic mobile" />
           </MobileImg>
           <Information>
             <HeroTitle>Experience the world, one adventure at a time</HeroTitle>
@@ -41,7 +41,7 @@ export default function Hero() {
               <LocationContainer>
                 <ChevronText>
                   <TitleInfo>Location</TitleInfo>
-                  <Image src={Chevron} alt="" />
+                  <Image src={Chevron} alt="chevron" />
                 </ChevronText>
                 <div>
                   <TextInfo>Dubai, UAE</TextInfo>
@@ -50,7 +50,7 @@ export default function Hero() {
               <DateContainer>
                 <ChevronText>
                   <TitleInfo>Date</TitleInfo>
-                  <Image src={Chevron} alt="" />
+                  <Image src={Chevron} alt="chevron" />
                 </ChevronText>
                 <div>
                   <TextInfo>Tue, Nov 10</TextInfo>
@@ -59,14 +59,14 @@ export default function Hero() {
               <PriceContainer>
                 <ChevronText>
                   <TitleInfo>Average price</TitleInfo>
-                  <Image src={Chevron} alt="" />
+                  <Image src={Chevron} alt="chevron" />
                 </ChevronText>
                 <div>
                   <TextInfo>$523 - $849</TextInfo>
                 </div>
               </PriceContainer>
               <SearchImg>
-                <Image src={Search} alt="" />
+                <Image src={Search} alt="search icon" />
               </SearchImg>
             </SearchInfo>
           </Information>
@@ -75,7 +75,7 @@ export default function Hero() {
             <span>Maui, Hawaii</span>
           </LocationNow>
           <ImageWrapper>
-            <Image src={Romantic} alt="" />
+            <Image src={Romantic} alt="romantic dekstop" />
           </ImageWrapper>
         </Wrapper>
       </Container>

@@ -32,4 +32,20 @@ describe("check hero text and image", () => {
     expect(findPrice).toBeInTheDocument();
     expect(findPriceText).toBeInTheDocument();
   });
+  test("check alt image", () => {
+    render(<Hero />);
+    const romanticMobile = screen.getByAltText("romantic mobile");
+    const romanticDesktop = screen.getByAltText("romantic dekstop");
+    const chevron = screen.getAllByAltText("chevron");
+    const search = screen.getByAltText("search icon");
+    const location = screen.getByAltText("location icon");
+
+    expect(romanticMobile).toBeInTheDocument();
+    expect(romanticDesktop).toBeVisible();
+    expect(chevron[0]).toBeVisible();
+    expect(chevron[1]).toBeVisible();
+    expect(chevron[2]).toBeVisible();
+    expect(search).toBeVisible();
+    expect(location).toBeVisible();
+  });
 });
