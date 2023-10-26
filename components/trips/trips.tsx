@@ -1,5 +1,6 @@
 import Padding from "../padding/padding";
 import TypeList from "./tripsType/typeList";
+import Destination from "./destination/destination";
 import {
   Container,
   Wrapper,
@@ -20,7 +21,7 @@ export default function Trips() {
 
           <TypeList />
 
-          <div></div>
+          <Destination />
         </Wrapper>
       </Container>
     </Padding>
