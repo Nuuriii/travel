@@ -7,7 +7,7 @@ export default function Ready() {
     <Container>
       <ReadyText>Ready to travel?</ReadyText>
       <WhitePlane>
-        <Image src={AirPlane} alt="" />
+        <Image src={AirPlane} alt="air plane" />
       </WhitePlane>
     </Container>
   );
