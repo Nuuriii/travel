@@ -151,7 +151,7 @@ export const SearchImg = styled.div`
 `;
 
 export const SearchInfo = styled.div`
-  padding: 1.1rem 2rem;
+  padding: 0.8rem 1.5rem;
   position: absolute;
   bottom: -1rem;
   display: flex;
@@ -160,6 +160,7 @@ export const SearchInfo = styled.div`
   border-radius: 2.9rem;
   background-color: #fff;
   @media (width <= 1029px) {
+    display: none;
     bottom: -6rem;
     border-radius: 5rem;
     padding: 0.4rem 2rem;
