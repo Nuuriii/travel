@@ -8,7 +8,6 @@ export const Nav = styled.nav`
   font-family: "outfitRegular", serif;
   z-index: 30;
   @media (width >= 1488px) {
-    width: 100vw;
     display: flex;
     justify-content: center;
   }

@@ -10,7 +10,7 @@ export const Container = styled.div`
     padding: 9rem 0 0 0;
   }
   @media (width >= 1488px) {
-    width: 100vw;
+    /* width: 100vw; */
   }
   @media (width <= 748px) {
     width: 100%;

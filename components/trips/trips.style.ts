@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Trips from "./trips";
 
 export const Container = styled.div`
   width: 100%;
@@ -7,12 +6,18 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (width >= 1488px) {
+    /* width: 100vw; */
+  }
 `;
 
 export const Wrapper = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  @media (width >= 1488px) {
+    width: 75rem;
+  }
 `;
 
 export const TripsText = styled.div`
