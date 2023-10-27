@@ -18,4 +18,10 @@ describe("check text and image in TripList component", () => {
     expect(AsiaText).toBeInTheDocument();
     expect(MoreText).toBeInTheDocument();
   });
+  test("check img with alt text", () => {
+    render(<TripList />);
+    const Ellipse = screen.getByAltText("ellipse");
+
+    expect(Ellipse).toBeInTheDocument();
+  });
 });
