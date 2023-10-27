@@ -22,7 +22,7 @@ export default function Destination() {
       {destinationData.map((item, index) => (
         <GridItem key={index}>
           <ImagePlace>
-            <Image src={item.img} alt="" />
+            <Image src={item.img} alt={item.alt} />
           </ImagePlace>
           <JustifyBetween>
             <TimeText>{item.time}</TimeText>
@@ -37,7 +37,7 @@ export default function Destination() {
           </DescContainer>
           <JustifyBetween>
             <LocationContainer>
-              <Image src={Location} alt="" />
+              <Image src={Location} alt="location icon" />
               <p>{item.placeText}</p>
             </LocationContainer>
             <Button>{item.btnText}</Button>

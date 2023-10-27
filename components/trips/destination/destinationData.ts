@@ -5,6 +5,7 @@ import Morocco from "@/assets/trips/morocco.png";
 export const destinationData = [
   {
     img: Italy,
+    alt: "italy",
     time: "7 Days, 6 Nights",
     cost: "$348 /person",
     descText: "Explore the ",
@@ -15,6 +16,7 @@ export const destinationData = [
   },
   {
     img: France,
+    alt: "france",
     time: "3 Days, 2 Nights",
     cost: "$348 /person",
     descText: "Seek the ",
@@ -25,6 +27,7 @@ export const destinationData = [
   },
   {
     img: Morocco,
+    alt: "morocco",
     time: "4 days, 3 Nights",
     cost: "$348 /person",
     descText: "Discover the ",

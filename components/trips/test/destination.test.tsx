@@ -45,4 +45,18 @@ describe("check text and image in Destination component", () => {
     expect(btnText[1]).toBeInTheDocument();
     expect(btnText[2]).toBeInTheDocument();
   });
+  test("check img alt", () => {
+    render(<Destination />);
+    const location = screen.getAllByAltText("location icon");
+    const italy = screen.getByAltText("italy");
+    const france = screen.getByAltText("france");
+    const morocco = screen.getByAltText("morocco");
+
+    expect(location[0]).toBeVisible();
+    expect(location[1]).toBeVisible();
+    expect(location[2]).toBeVisible();
+    expect(italy).toBeVisible();
+    expect(france).toBeVisible();
+    expect(morocco).toBeVisible();
+  });
 });
