@@ -18,9 +18,7 @@ export default function Trips() {
             <PopularText>Popular Trips</PopularText>
             <PopularTitle>Our Most Popular Trips</PopularTitle>
           </TripsText>
-
           <TypeList />
-
           <Destination />
         </Wrapper>
       </Container>
