@@ -38,4 +38,7 @@ export const PopularTitle = styled.h2`
   font-family: "outfitSemiBold", serif;
   font-size: 2rem;
   color: #263238;
+  @media (width <= 688px) {
+    font-size: 1.5rem;
+  }
 `;
