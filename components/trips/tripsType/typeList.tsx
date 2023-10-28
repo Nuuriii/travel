@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Ellipse from "@/assets/trips/blueEllipse.svg";
 import Image from "next/image";
 import { type } from "./type";
@@ -6,6 +6,13 @@ import { TypeWrapper, BtnType } from "./type.style";
 
 const TripList = () => {
   const [selectedTrip, setSelectedTrip] = useState<string | null>(null);
+  const [width, setWidth] = useState(0);
+  const handleResize = () => setWidth(window.innerWidth);
+  useEffect(() => {
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const handleClick = (tripName: string) => {
     if (selectedTrip !== tripName) {
@@ -35,6 +42,14 @@ const TripList = () => {
     );
   };
 
+  const handleIndex = (num: number) => {
+    return (num >= 4 && width <= 1029) ||
+      (num >= 3 && width <= 648) ||
+      (num >= 2 && width <= 482)
+      ? true
+      : false;
+  };
+
   return (
     <TypeWrapper>
       {type.map((trip, index) => (
@@ -43,6 +58,7 @@ const TripList = () => {
           $isFirst={fisrtIndex(index)}
           $selected={handleSelected(selectedTrip, trip.name)}
           key={index}
+          $isOver={handleIndex(index)}
         >
           <span onClick={() => handleClick(trip.name)}>{trip.name}</span>
           {handleEllipse(selectedTrip, trip.name)}

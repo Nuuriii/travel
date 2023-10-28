@@ -20,6 +20,7 @@ export const TypeWrapper = styled.div`
 export const BtnType = styled.button<{
   $selected: boolean;
   $isFirst: any;
+  $isOver: any;
 }>`
   display: flex;
   width: 100%;
@@ -29,7 +30,9 @@ export const BtnType = styled.button<{
   background-color: white;
   border-left: ${(props) => (props.$isFirst ? "2px solid #90caf9" : "")};
   cursor: pointer;
-
+  @media (width <= 1029px) {
+    display: ${(props) => (props.$isOver ? "none" : "flex")};
+  }
   span {
     font-size: 1.2rem;
     font-family: ${(props) =>

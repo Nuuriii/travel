@@ -3,8 +3,8 @@ import Image from "next/image";
 import { destinationData } from "./destinationData";
 import Location from "@/assets/hero/location.svg";
 import {
-  Grid,
-  GridItem,
+  Flex,
+  FlexItem,
   ImagePlace,
   TimeText,
   CostText,
@@ -18,9 +18,9 @@ import {
 
 export default function Destination() {
   return (
-    <Grid>
+    <Flex>
       {destinationData.map((item, index) => (
-        <GridItem key={index}>
+        <FlexItem key={index}>
           <ImagePlace>
             <Image src={item.img} alt={item.alt} />
           </ImagePlace>
@@ -42,8 +42,8 @@ export default function Destination() {
             </LocationContainer>
             <Button>{item.btnText}</Button>
           </JustifyBetween>
-        </GridItem>
+        </FlexItem>
       ))}
-    </Grid>
+    </Flex>
   );
 }

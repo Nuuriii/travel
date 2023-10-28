@@ -1,14 +1,20 @@
 import styled from "styled-components";
 
-export const Grid = styled.div`
+export const Flex = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  @media (width <= 1029px) {
+    justify-content: center;
+  }
 `;
 
-export const GridItem = styled.div`
+export const FlexItem = styled.div`
   width: 22rem;
+  @media (width <= 1029px) {
+    margin: 0rem 0.7rem 3rem 0.7rem;
+  }
 `;
 
 export const ImagePlace = styled.div`
