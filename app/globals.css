@@ -38,3 +38,18 @@
   font-family: "Jua";
   src: url("../assets/fonts/jua/Jua-Regular.ttf");
 }
+
+@font-face {
+  font-family: "rasaRegular";
+  src: url("../assets//fonts//rasa/Rasa-Regular.ttf");
+}
+
+@font-face {
+  font-family: "rasaSemiBold";
+  src: url("../assets//fonts//rasa/Rasa-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "rasaBold";
+  src: url("../assets/fonts/rasa/Rasa-Bold.ttf");
+}
