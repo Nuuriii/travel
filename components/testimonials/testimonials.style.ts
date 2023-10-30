@@ -10,6 +10,9 @@ export const Container = styled.div`
 export const TestimonialContainer = styled.div`
   display: flex;
   flex-direction: column;
+  @media (width >= 1488px) {
+    width: 70rem;
+  }
 `;
 
 export const TestimonialDesc = styled.div`
