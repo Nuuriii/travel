@@ -18,9 +18,9 @@ export default function TestimonialList() {
 
   const handleStars = (i: number) => {
     return i === 0 || i === 3 ? (
-      <Image src={WhiteStars} alt="" />
+      <Image src={WhiteStars} alt="white stars" />
     ) : (
-      <Image src={BlueStars} alt="" />
+      <Image src={BlueStars} alt="blue stars" />
     );
   };
 
