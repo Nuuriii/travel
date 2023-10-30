@@ -36,6 +36,13 @@ export const Description = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: end;
+  @media (width <= 1029px) {
+    width: 100%;
+    align-items: center;
+  }
+  @media (width <= 788px) {
+    margin: 0;
+  }
 `;
 
 export const ExperienceText = styled.div`
@@ -54,13 +61,13 @@ export const ExperienceText = styled.div`
 export const ExperienceTitle = styled.h2`
   font-family: "outfitSemiBold", sans-serif;
   font-size: 2.4rem;
+  color: #263238;
   @media (width <= 1029px) {
     text-align: center;
   }
   @media (width <= 788px) {
-    margin: 0 auto;
     font-size: 2rem;
-    width: 30%;
+    width: 90%;
   }
 `;
 
@@ -71,11 +78,11 @@ export const ExperienceDescription = styled.p`
   font-size: 1rem;
   @media (width <= 1029px) {
     text-align: center;
-    margin: 1rem auto 2rem auto;
+    margin: 1rem 0 2rem 0;
     width: 40rem;
   }
   @media (width <= 788px) {
-    width: 30%;
+    width: 90%;
   }
 `;
 
@@ -86,7 +93,7 @@ export const Superiority = styled.div`
   }
   @media (width <= 788px) {
     margin: 0 auto;
-    width: 10%;
+    width: 90%;
   }
 `;
 
@@ -122,6 +129,11 @@ export const CostText = styled.h2`
 
 export const PlaceContainer = styled.div`
   display: flex;
+  @media (width <= 788px) {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const PlaceItem1 = styled.div`
@@ -138,8 +150,9 @@ export const PlaceItem1 = styled.div`
   background-size: cover;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   @media (width <= 788px) {
-    height: 10rem;
-    width: 10rem;
+    margin: 1rem 0 0 0;
+    height: 20rem;
+    width: 20rem;
   }
 `;
 
@@ -156,8 +169,7 @@ export const PlaceItem2 = styled.div`
   background-size: cover;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   @media (width <= 788px) {
-    height: 10rem;
-    width: 10rem;
+    display: none;
   }
 `;
 
