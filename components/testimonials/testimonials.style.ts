@@ -30,6 +30,7 @@ export const TestimonialText = styled.p`
 export const TestimonialsTitle = styled.h1`
   font-family: "outfitSemiBold", sans-serif;
   font-size: 2.4rem;
+  text-align: center;
   color: #263238;
 `;
 

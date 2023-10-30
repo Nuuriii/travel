@@ -7,7 +7,7 @@ export const Flex = styled.div`
   justify-content: center;
 `;
 
-export const FlexItem = styled.div<{ $isBlue: any }>`
+export const FlexItem = styled.div<{ $isBlue: any; $isMobile: any }>`
   width: 30rem;
   margin: 0.5rem;
   padding: 1rem;
@@ -17,6 +17,12 @@ export const FlexItem = styled.div<{ $isBlue: any }>`
   border-radius: 10px;
   border: 2px solid #263238;
   box-shadow: 4px 4px 0px 0px #263238;
+  @media (width <= 1029px) {
+    width: 20rem;
+  }
+  @media (width <= 688px) {
+    background-color: ${(props) => (props.$isMobile ? "#bcdffb" : "#faf9ff")};
+  }
 `;
 
 export const Name = styled.h3<{ $isBlue: any }>`
