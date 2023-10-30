@@ -1,4 +1,5 @@
 import Padding from "../padding/padding";
+import TestimonialList from "./testimonialsList/testimonialsList";
 import {
   Container,
   TestimonialContainer,
@@ -20,6 +21,8 @@ export default function Testimonials() {
               Written by real travelers, just like you!
             </TestimonialParaph>
           </TestimonialDesc>
+
+          <TestimonialList />
         </TestimonialContainer>
       </Container>
     </Padding>
