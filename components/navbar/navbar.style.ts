@@ -30,6 +30,7 @@ export const NavWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   @media (width <= 748px) {
+    padding: 0.5rem;
   }
 `;
 
@@ -41,9 +42,16 @@ export const IconWrapper = styled.div`
     position: absolute;
     top: 0.5rem;
     left: -2rem;
+    @media (width <= 748px) {
+      left: 0;
+    }
   }
   .icon {
     height: 5rem;
+    width: auto;
+    @media (width <= 748px) {
+      height: 4.5rem;
+    }
   }
   @media (width <= 748px) {
     width: 10rem;
