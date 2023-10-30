@@ -1,5 +1,5 @@
 import { screen, render } from "@testing-library/react";
-import TestimonialList from "./testimonialsList";
+import TestimonialList from "../testimonialsList/testimonialsList";
 
 describe("check text and alt image", () => {
   test("check text", () => {
