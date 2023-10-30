@@ -2,7 +2,14 @@ import Image from "next/image";
 import WhiteStars from "@/assets/testimonials/whiteStars.svg";
 import BlueStars from "@/assets/testimonials/blueStars.svg";
 import { testimoniData } from "./testimoniData";
-import { Flex, FlexItem } from "./testimonialsList.style";
+import {
+  Flex,
+  FlexItem,
+  Name,
+  PlaceText,
+  TestimoniText,
+  StarsWrapper,
+} from "./testimonialsList.style";
 
 export default function TestimonialList() {
   const handleIndex = (i: number) => {
@@ -21,10 +28,10 @@ export default function TestimonialList() {
     <Flex>
       {testimoniData.map((item, index) => (
         <FlexItem $isBlue={handleIndex(index)} key={index}>
-          <h3>{item.name}</h3>
-          <p>{item.place}</p>
-          <p>{item.testimoni}</p>
-          <div>{handleStars(index)}</div>
+          <Name $isBlue={handleIndex(index)}>{item.name}</Name>
+          <PlaceText>{item.place}</PlaceText>
+          <TestimoniText>{item.testimoni}</TestimoniText>
+          <StarsWrapper>{handleStars(index)}</StarsWrapper>
         </FlexItem>
       ))}
     </Flex>
