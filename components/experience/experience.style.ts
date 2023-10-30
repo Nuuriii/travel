@@ -15,14 +15,19 @@ export const Container = styled.div`
 export const Responsive = styled.div`
   width: 100%;
   @media (width >= 1488px) {
-    width: 75rem;
+    width: 82rem;
   }
 `;
 
 export const ExperienceWrapper = styled.div`
   display: flex;
   overflow: hidden;
+  justify-content: center;
   padding: 0.5rem 0;
+  @media (width <= 1029px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const Description = styled.div`
@@ -38,11 +43,25 @@ export const ExperienceText = styled.div`
   font-family: "Jua", sans-serif;
   text-transform: uppercase;
   font-size: 1.2rem;
+  @media (width <= 1029px) {
+    text-align: center;
+  }
+  @media (width <= 788px) {
+    font-size: 1rem;
+  }
 `;
 
 export const ExperienceTitle = styled.h2`
   font-family: "outfitSemiBold", sans-serif;
   font-size: 2.4rem;
+  @media (width <= 1029px) {
+    text-align: center;
+  }
+  @media (width <= 788px) {
+    margin: 0 auto;
+    font-size: 2rem;
+    width: 30%;
+  }
 `;
 
 export const ExperienceDescription = styled.p`
@@ -50,16 +69,34 @@ export const ExperienceDescription = styled.p`
   color: rgba(38, 50, 56, 0.5);
   font-family: "interSemiBold", sans-serif;
   font-size: 1rem;
+  @media (width <= 1029px) {
+    text-align: center;
+    margin: 1rem auto 2rem auto;
+    width: 40rem;
+  }
+  @media (width <= 788px) {
+    width: 30%;
+  }
 `;
 
 export const Superiority = styled.div`
   display: flex;
+  @media (width <= 1029px) {
+    justify-content: center;
+  }
+  @media (width <= 788px) {
+    margin: 0 auto;
+    width: 10%;
+  }
 `;
 
 export const SuperiorityItems = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 3rem 0 0;
+  @media (width <= 788px) {
+    margin: 0 1rem 0 0;
+  }
 `;
 
 export const SuperiorityText = styled.p`
@@ -67,6 +104,9 @@ export const SuperiorityText = styled.p`
   font-family: "interRegular";
   padding: 0;
   margin: 0;
+  @media (width <= 788px) {
+    text-align: center;
+  }
 `;
 
 export const CostText = styled.h2`
@@ -74,6 +114,10 @@ export const CostText = styled.h2`
   padding: 0;
   font-family: "rasaSemiBold", sans-serif;
   font-size: 3rem;
+  @media (width <= 788px) {
+    text-align: center;
+    font-size: 2.2rem;
+  }
 `;
 
 export const PlaceContainer = styled.div`
@@ -92,7 +136,11 @@ export const PlaceItem1 = styled.div`
   border-radius: 1rem;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  @media (width <= 788px) {
+    height: 10rem;
+    width: 10rem;
+  }
 `;
 
 export const PlaceItem2 = styled.div`
@@ -106,7 +154,11 @@ export const PlaceItem2 = styled.div`
   border-radius: 1rem;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  @media (width <= 788px) {
+    height: 10rem;
+    width: 10rem;
+  }
 `;
 
 export const PlaceText = styled.div`
