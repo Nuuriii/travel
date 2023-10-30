@@ -32,4 +32,11 @@ describe("check text and image", () => {
     expect(thailandText).toBeInTheDocument();
     expect(joshuaTreeText).toBeInTheDocument();
   });
+  test("check image alt text", () => {
+    render(<Experience />);
+    const stars = screen.getAllByAltText("stars");
+
+    expect(stars[0]).toBeVisible();
+    expect(stars[1]).toBeVisible();
+  });
 });
