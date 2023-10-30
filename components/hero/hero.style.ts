@@ -9,17 +9,14 @@ export const Container = styled.div`
   @media (width <= 1029px) {
     padding: 9rem 0 0 0;
   }
-  @media (width >= 1488px) {
-    /* width: 100vw; */
-  }
   @media (width <= 748px) {
     width: 100%;
+    padding: 4rem 0 0 0;
   }
 `;
 
 export const Wrapper = styled.div`
   width: 100%;
-  padding: 0rem 0 0 0;
   position: relative;
   display: flex;
   align-items: center;
