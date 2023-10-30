@@ -29,4 +29,14 @@ describe("check text and alt image", () => {
     expect(testimoni[2]).toBeInTheDocument();
     expect(testimoni[3]).toBeInTheDocument();
   });
+  test("check alt image", () => {
+    render(<TestimonialList />);
+    const whiteStars = screen.getAllByAltText("white stars");
+    const blueStars = screen.getAllByAltText("blue stars");
+
+    expect(whiteStars[0]).toBeVisible();
+    expect(blueStars[0]).toBeVisible();
+    expect(whiteStars[1]).toBeVisible();
+    expect(blueStars[1]).toBeVisible();
+  });
 });
