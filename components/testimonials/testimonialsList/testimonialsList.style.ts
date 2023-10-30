@@ -25,7 +25,7 @@ export const Name = styled.h3<{ $isBlue: any }>`
 `;
 
 export const PlaceText = styled.p`
-  margin: 0.4rem 0;
+  margin: 0.2rem 0 1rem 0;
   font-family: "interRegular", sans-serif;
   color: #263238;
 `;
@@ -36,6 +36,7 @@ export const TestimoniText = styled.p`
 `;
 
 export const StarsWrapper = styled.div`
+  margin: 2rem 0 0 0;
   display: flex;
   justify-content: end;
 `;
