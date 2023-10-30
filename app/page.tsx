@@ -4,6 +4,7 @@ import Hero from "@/components/hero/hero";
 import Ready from "@/components/ready/ready";
 import Trips from "@/components/trips/trips";
 import Experience from "@/components/experience/experience";
+import Testimonials from "@/components/testimonials/testimonials";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <Ready />
         <Trips />
         <Experience />
+        <Testimonials />
       </main>
     </>
   );
