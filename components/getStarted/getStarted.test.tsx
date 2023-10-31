@@ -14,4 +14,12 @@ describe("check text and img alt text", () => {
     expect(getStartedTitle).toBeInTheDocument();
     expect(btnText).toBeInTheDocument();
   });
+  test("check alt text", () => {
+    render(<GetStarted />);
+    const kyoto = screen.getByAltText("kyoto img");
+    const location = screen.getByAltText("location icon");
+
+    expect(kyoto).toBeVisible();
+    expect(location).toBeVisible();
+  });
 });
