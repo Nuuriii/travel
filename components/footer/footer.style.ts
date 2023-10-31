@@ -27,7 +27,7 @@ export const Information = styled.div`
   display: flex;
   justify-content: space-between;
   @media (width <= 788px) {
-    margin: 5rem 2rem 0rem 2rem;
+    padding: 5rem 2rem 0rem 2rem;
     flex-direction: column;
   }
 `;
@@ -35,7 +35,7 @@ export const Information = styled.div`
 export const IconWrapper = styled.div`
   display: flex;
   @media (width <= 788px) {
-    margin: 0 0 2rem 0;
+    display: none;
   }
   img {
     height: 4rem;
@@ -46,7 +46,7 @@ export const IconWrapper = styled.div`
 export const LinkContainer = styled.div`
   display: flex;
   @media (width <= 788px) {
-    justify-content: center;
+    //justify-content: center;
     flex-wrap: wrap;
   }
 `;
