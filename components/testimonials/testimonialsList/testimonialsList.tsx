@@ -17,8 +17,6 @@ export default function TestimonialList() {
 
   const handleResize = () => setWidth(window.innerWidth);
 
-  console.log(width);
-
   useEffect(() => {
     handleResize();
     window.addEventListener("resize", handleResize);
