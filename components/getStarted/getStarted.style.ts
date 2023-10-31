@@ -95,11 +95,19 @@ export const GetStartedBtn = styled.button`
   height: 2.5rem;
   width: 8rem;
   font-size: 1rem;
-  font-family: "outfitSemiBold", sans-serif;
+  font-family: "outfitRegular", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
   border: none;
   border-radius: 2rem;
   background-color: #ffffff;
+  transition: all 0.2s;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.055);
+  }
+  &:active {
+    transform: scale(0.99);
+  }
 `;

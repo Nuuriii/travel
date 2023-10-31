@@ -51,6 +51,9 @@ export const LinkTextWrapper = styled.div`
     text-decoration: none;
     font-family: "interRegular", sans-serif;
     color: #263238;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 `;
 
