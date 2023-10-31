@@ -4,6 +4,16 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   background-color: #ddeffd;
+  @media (width >= 1488px) {
+    justify-content: center;
+  }
+`;
+
+export const Responsive = styled.div`
+  width: 100%;
+  @media (width >= 1488px) {
+    width: 70rem;
+  }
 `;
 
 export const Wrapper = styled.div`
