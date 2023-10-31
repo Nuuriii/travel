@@ -42,7 +42,7 @@ export const IconWrapper = styled.div`
     position: absolute;
     top: 0.5rem;
     left: -2rem;
-    @media (width <= 748px) {
+    @media (width <= 1029px) {
       left: 0;
     }
   }
