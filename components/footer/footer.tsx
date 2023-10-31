@@ -1,5 +1,6 @@
 import Padding from "../padding/padding";
 import Image from "next/image";
+import Link from "next/link";
 import Plane from "@/assets/footer/Logo.svg";
 import Linkedin from "@/assets/footer/linkedin.svg";
 import Instagram from "@/assets/footer/instagram.svg";
@@ -10,6 +11,10 @@ import {
   Information,
   IconWrapper,
   LinkContainer,
+  LinkItem,
+  LinkTitle,
+  LinkTextWrapper,
+  SosmedContainer,
   LicenseWrapper,
 } from "./footer.style";
 
@@ -23,41 +28,47 @@ export default function Footer() {
               <Image src={Plane} alt="plane icon" />
             </IconWrapper>
             <LinkContainer>
-              <div>
-                <h3>About us</h3>
-                <div>
-                  <p>About us</p>
-                  <p>Creators</p>
-                  <p>Philosophy</p>
-                  <p>Contact us</p>
-                </div>
-              </div>
-              <div>
-                <h3>Company</h3>
-                <div>
-                  <p>Our team</p>
-                  <p>Terms</p>
-                  <p>How it works</p>
-                  <p>Blog</p>
-                </div>
-              </div>
-              <div>
-                <h3>Services</h3>
-                <div>
-                  <p>Flights</p>
-                  <p>Planning</p>
-                  <p>Hotels</p>
-                  <p>Booking</p>
-                </div>
-              </div>
-              <div>
-                <h3>Check us out</h3>
-                <div>
-                  <Image src={Facebook} alt="facebook icon" />
-                  <Image src={Instagram} alt="instagram icon" />
-                  <Image src={Linkedin} alt="linkedin icon" />
-                </div>
-              </div>
+              <LinkItem>
+                <LinkTitle>About us</LinkTitle>
+                <LinkTextWrapper>
+                  <Link href={"/"}>About us</Link>
+                  <Link href={"/"}>Creators</Link>
+                  <Link href={"/"}>Philosophy</Link>
+                  <Link href={"/"}>Contact us</Link>
+                </LinkTextWrapper>
+              </LinkItem>
+              <LinkItem>
+                <LinkTitle>Company</LinkTitle>
+                <LinkTextWrapper>
+                  <Link href={"/"}>Our team</Link>
+                  <Link href={"/"}>Terms</Link>
+                  <Link href={"/"}>How it works</Link>
+                  <Link href={"/"}>Blog</Link>
+                </LinkTextWrapper>
+              </LinkItem>
+              <LinkItem>
+                <LinkTitle>Services</LinkTitle>
+                <LinkTextWrapper>
+                  <Link href={"/"}>Flights</Link>
+                  <Link href={"/"}>Planning</Link>
+                  <Link href={"/"}>Hotels</Link>
+                  <Link href={"/"}>Booking</Link>
+                </LinkTextWrapper>
+              </LinkItem>
+              <LinkItem>
+                <LinkTitle>Check us out</LinkTitle>
+                <SosmedContainer>
+                  <Link href={"/"}>
+                    <Image src={Facebook} alt="facebook icon" />
+                  </Link>
+                  <Link href={"/"}>
+                    <Image src={Instagram} alt="instagram icon" />
+                  </Link>
+                  <Link href={"/"}>
+                    <Image src={Linkedin} alt="linkedin icon" />
+                  </Link>
+                </SosmedContainer>
+              </LinkItem>
             </LinkContainer>
           </Information>
           <LicenseWrapper>
