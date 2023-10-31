@@ -15,7 +15,7 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   background-color: #bcdffb;
   border-radius: 5rem;
-  @media (width <= 888px) {
+  @media (width <= 758px) {
     height: 25rem;
     border-radius: 2rem;
     width: 22rem;
@@ -29,7 +29,7 @@ export const ImageWrapper = styled.div`
   display: flex;
   width: 50%;
   flex-direction: column;
-  @media (width <= 888px) {
+  @media (width <= 758px) {
     height: 60%;
     width: 100%;
   }
@@ -38,7 +38,7 @@ export const ImageWrapper = styled.div`
     height: 19rem;
     width: auto;
     bottom: -2.5rem;
-    @media (width <= 888px) {
+    @media (width <= 758px) {
       bottom: 0;
       left: -1rem;
     }
@@ -57,7 +57,7 @@ export const LocationWrapper = styled.div`
   background-color: #ffffff;
   border-radius: 2rem;
   z-index: 1;
-  @media (width <= 888px) {
+  @media (width <= 758px) {
     top: -1rem;
     right: -2rem;
   }
@@ -75,7 +75,7 @@ export const DescWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  @media (width <= 888px) {
+  @media (width <= 758px) {
     height: 37%;
   }
 `;
@@ -86,7 +86,7 @@ export const GetStartedTitle = styled.h1`
   font-size: 2rem;
   color: #263238;
   text-align: center;
-  @media (width <= 888px) {
+  @media (width <= 758px) {
     font-size: 1.5rem;
   }
 `;
