@@ -6,6 +6,7 @@ import Trips from "@/components/trips/trips";
 import Experience from "@/components/experience/experience";
 import Testimonials from "@/components/testimonials/testimonials";
 import GetStarted from "@/components/getStarted/getStarted";
+import Footer from "@/components/footer/footer";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <Testimonials />
         <GetStarted />
       </main>
+      <Footer />
     </>
   );
 }
