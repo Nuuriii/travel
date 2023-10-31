@@ -38,6 +38,6 @@ export const TestimonialsTitle = styled.h1`
 `;
 
 export const TestimonialParaph = styled.p`
-  color: rgba(38, 50, 56, 0.5);
   font-family: "interRegular", sans-serif;
+  color: rgba(38, 50, 56, 0.5);
 `;

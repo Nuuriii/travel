@@ -32,13 +32,13 @@ export const Wrapper = styled.div`
 `;
 
 export const Information = styled.div`
+  margin: 0 5rem 0 0;
   display: flex;
   flex-direction: column;
-  margin: 0 5rem 0 0;
   @media (width <= 1029px) {
-    align-items: center;
     width: 100%;
     margin: 0;
+    align-items: center;
   }
   @media (width <= 748px) {
     width: 100%;
@@ -81,18 +81,18 @@ export const HeroText = styled.p`
 export const MobileImg = styled.div`
   display: none;
   @media (width <= 1029px) {
+    width: 100%;
     display: flex;
     justify-content: center;
-    width: 100%;
   }
 
   img {
     height: 25rem;
     width: auto;
     @media (width <= 548px) {
-      margin: 0;
       height: auto;
       width: 100%;
+      margin: 0;
     }
   }
 `;
@@ -104,11 +104,11 @@ export const LocationNow = styled.button`
   left: 46%;
   display: flex;
   align-items: center;
-  font-family: "outfitRegular", sans-serif;
   border: 2px solid #ddeffd;
   border-radius: 3rem;
   background: #fff;
   cursor: pointer;
+  font-family: "outfitRegular", sans-serif;
   font-size: 1.1rem;
   @media (width <= 1029px) {
     top: 2rem;
@@ -157,8 +157,8 @@ export const SearchInfo = styled.div`
   border-radius: 2.9rem;
   background-color: #fff;
   @media (width <= 1029px) {
-    display: none;
     bottom: -6rem;
+    display: none;
     border-radius: 5rem;
     padding: 0.4rem 2rem;
   }
@@ -170,8 +170,8 @@ export const SearchInfo = styled.div`
 
 export const TitleInfo = styled.span`
   font-size: 0.8rem;
-  color: rgba(38, 50, 56, 0.6);
   font-family: "interRegular", sans-serif;
+  color: rgba(38, 50, 56, 0.6);
 `;
 
 export const ChevronText = styled.div`
@@ -187,16 +187,16 @@ export const TextInfo = styled.p`
 
 export const LocationContainer = styled.div`
   padding: 0 2rem 0 0;
-  border-right: 2px solid #90caf9;
   display: flex;
   flex-direction: column;
+  border-right: 2px solid #90caf9;
 `;
 
 export const DateContainer = styled.div`
   padding: 0 2rem 0 2rem;
-  border-right: 2px solid #90caf9;
   display: flex;
   flex-direction: column;
+  border-right: 2px solid #90caf9;
 `;
 
 export const PriceContainer = styled.div`

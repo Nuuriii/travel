@@ -4,11 +4,11 @@ export const Container = styled.div`
   width: 100%;
   padding: 1.4rem 0;
   position: relative;
-  background-color: #ddeffd;
   display: flex;
   overflow: hidden;
   justify-content: center;
   align-items: center;
+  background-color: #ddeffd;
   @media (width <= 1029px) {
     margin: 4rem 0 0 0;
   }

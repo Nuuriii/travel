@@ -81,10 +81,10 @@ export const Menu = styled.div<{ $show: boolean }>`
     border-radius: 0.5rem;
     top: 5rem;
     right: ${(props) => (props.$show ? "1.8rem" : "-100%")};
-    transition: all 0.3s;
-    background-color: #90caf9;
     flex-direction: column;
     align-items: start;
+    transition: all 0.3s;
+    background-color: #90caf9;
   }
 `;
 
@@ -127,11 +127,11 @@ export const AuthBtn = styled.div`
   .login {
     height: 2.5rem;
     width: 6rem;
+    margin: 0 2rem 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 2rem;
-    margin: 0 2rem 0 0;
     text-decoration: none;
     color: #75a3c8;
     &:hover {

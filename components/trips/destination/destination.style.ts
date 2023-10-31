@@ -50,13 +50,13 @@ export const KeyText = styled.p`
 `;
 
 export const UnderlineEffect = styled.span`
+  height: 0.5rem;
+  width: 100%;
   position: absolute;
   background-color: #bcdffb;
   z-index: -1;
   bottom: 0.1rem;
   left: 0;
-  width: 100%;
-  height: 0.5rem;
 `;
 
 export const LocationContainer = styled.div`
@@ -67,11 +67,11 @@ export const LocationContainer = styled.div`
 `;
 
 export const Button = styled.button`
+  height: 2.2rem;
+  width: 8rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 2.2rem;
-  width: 8rem;
   font-family: "outfitSemiBold", sans-serif;
   border: none;
   border-radius: 2rem;

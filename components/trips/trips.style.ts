@@ -26,8 +26,8 @@ export const TripsText = styled.div`
 
 export const PopularText = styled.p`
   margin: 0 0 0.5rem 0;
-  font-family: "Jua", serif;
   text-transform: uppercase;
+  font-family: "Jua", serif;
   color: #75a3c8;
 `;
 

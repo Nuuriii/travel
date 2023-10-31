@@ -46,15 +46,14 @@ export const IconWrapper = styled.div`
 export const LinkContainer = styled.div`
   display: flex;
   @media (width <= 788px) {
-    //justify-content: center;
     flex-wrap: wrap;
   }
 `;
 
 export const LinkItem = styled.div`
+  margin: 0 3rem 0 0;
   display: flex;
   flex-direction: column;
-  margin: 0 3rem 0 0;
   @media (width <= 788px) {
     margin: 0 3rem 2rem 0;
   }
@@ -93,8 +92,8 @@ export const SosmedContainer = styled.div`
 `;
 
 export const LicenseWrapper = styled.div`
-  padding: 1rem 0;
   width: 100%;
+  padding: 1rem 0;
   display: flex;
   align-items: center;
   justify-content: center;

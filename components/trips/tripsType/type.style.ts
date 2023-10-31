@@ -22,8 +22,8 @@ export const BtnType = styled.button<{
   $isFirst: any;
   $isOver: any;
 }>`
-  display: flex;
   width: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
   border: none;
@@ -34,11 +34,11 @@ export const BtnType = styled.button<{
     display: ${(props) => (props.$isOver ? "none" : "flex")};
   }
   span {
+    margin: 0 0.5rem 0 0;
     font-size: 1.2rem;
     font-family: ${(props) =>
         props.$selected ? "outfitSemiBold" : "outfitRegular"},
       serif;
-    margin: 0 0.5rem 0 0;
   }
   img {
     height: 1rem;

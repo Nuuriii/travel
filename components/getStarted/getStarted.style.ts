@@ -7,36 +7,36 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  padding: 2.5rem 4rem;
-  margin: 8rem 0 4rem 0;
   height: 15rem;
   width: 50rem;
+  margin: 8rem 0 4rem 0;
+  padding: 2.5rem 4rem;
   display: flex;
   justify-content: space-between;
   background-color: #bcdffb;
   border-radius: 5rem;
   @media (width <= 758px) {
     height: 25rem;
-    border-radius: 2rem;
     width: 22rem;
     padding: 2rem 3rem;
+    border-radius: 2rem;
     flex-direction: column;
   }
 `;
 
 export const ImageWrapper = styled.div`
+  width: 50%;
   position: relative;
   display: flex;
-  width: 50%;
   flex-direction: column;
   @media (width <= 758px) {
     height: 60%;
     width: 100%;
   }
   .kyoto {
-    position: absolute;
     height: 19rem;
     width: auto;
+    position: absolute;
     bottom: -2.5rem;
     @media (width <= 758px) {
       bottom: 0;
@@ -94,8 +94,6 @@ export const GetStartedTitle = styled.h1`
 export const GetStartedBtn = styled.button`
   height: 2.5rem;
   width: 8rem;
-  font-size: 1rem;
-  font-family: "outfitRegular", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,6 +101,8 @@ export const GetStartedBtn = styled.button`
   border-radius: 2rem;
   background-color: #ffffff;
   transition: all 0.2s;
+  font-size: 1rem;
+  font-family: "outfitRegular", sans-serif;
   cursor: pointer;
   &:hover {
     transform: scale(1.055);
