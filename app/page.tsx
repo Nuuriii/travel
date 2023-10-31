@@ -5,6 +5,7 @@ import Ready from "@/components/ready/ready";
 import Trips from "@/components/trips/trips";
 import Experience from "@/components/experience/experience";
 import Testimonials from "@/components/testimonials/testimonials";
+import GetStarted from "@/components/getStarted/getStarted";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Trips />
         <Experience />
         <Testimonials />
+        <GetStarted />
       </main>
     </>
   );
