@@ -3,7 +3,7 @@
     
   </a>
   <h3 align="center" style='display: flex; align-items: center;'>
-  <img src="/app/icon.svg" alt="Logo" width="10" height="10">
+  <img src="/app/icon.svg" alt="Logo" width="30" height="30">
   <span>Travel Landing page</span>
   </h3>
 </div>
