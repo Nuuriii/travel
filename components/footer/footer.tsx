@@ -39,6 +39,7 @@ export default function Footer() {
                     <Link href={"/"}>Contact us</Link>
                   </LinkTextWrapper>
                 </LinkItem>
+
                 <LinkItem>
                   <LinkTitle>Company</LinkTitle>
                   <LinkTextWrapper>
@@ -48,6 +49,7 @@ export default function Footer() {
                     <Link href={"/"}>Blog</Link>
                   </LinkTextWrapper>
                 </LinkItem>
+
                 <LinkItem>
                   <LinkTitle>Services</LinkTitle>
                   <LinkTextWrapper>
@@ -57,6 +59,7 @@ export default function Footer() {
                     <Link href={"/"}>Booking</Link>
                   </LinkTextWrapper>
                 </LinkItem>
+
                 <LinkItem>
                   <LinkTitle>Check us out</LinkTitle>
                   <SosmedContainer>

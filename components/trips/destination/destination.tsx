@@ -24,10 +24,12 @@ export default function Destination() {
           <ImagePlace>
             <Image src={item.img} alt={item.alt} />
           </ImagePlace>
+
           <JustifyBetween>
             <TimeText>{item.time}</TimeText>
             <CostText>{item.cost}</CostText>
           </JustifyBetween>
+
           <DescContainer>
             <p>{item.descText}</p>
             <KeyText>
@@ -35,6 +37,7 @@ export default function Destination() {
             </KeyText>
             <p>{item.beautyText}</p>
           </DescContainer>
+
           <JustifyBetween>
             <LocationContainer>
               <Image src={Location} alt="location icon" />

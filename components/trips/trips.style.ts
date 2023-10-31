@@ -6,9 +6,6 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  @media (width >= 1488px) {
-    /* width: 100vw; */
-  }
 `;
 
 export const Wrapper = styled.div`

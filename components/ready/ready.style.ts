@@ -9,9 +9,6 @@ export const Container = styled.div`
   overflow: hidden;
   justify-content: center;
   align-items: center;
-  /* @media (width >= 1488px) {
-    width: 100vw;
-  } */
   @media (width <= 1029px) {
     margin: 4rem 0 0 0;
   }
@@ -48,8 +45,6 @@ export const ReadyWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  @media (width <= 748px) {
-  }
 `;
 
 export const WhitePlane = styled.div`
