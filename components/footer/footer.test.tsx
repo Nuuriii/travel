@@ -38,4 +38,16 @@ describe("check text and alt text", () => {
     expect(booking).toBeInTheDocument();
     expect(checkUsOut).toBeInTheDocument();
   });
+  test("check alt text", () => {
+    render(<Footer />);
+    const planeIcon = screen.getByAltText("plane icon");
+    const facebookIcon = screen.getByAltText("facebook icon");
+    const instagramIcon = screen.getByAltText("instagram icon");
+    const linkedinIcon = screen.getByAltText("linkedin icon");
+
+    expect(planeIcon).toBeVisible();
+    expect(facebookIcon).toBeVisible();
+    expect(instagramIcon).toBeVisible();
+    expect(linkedinIcon).toBeVisible();
+  });
 });
