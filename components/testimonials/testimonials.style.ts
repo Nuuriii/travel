@@ -32,6 +32,9 @@ export const TestimonialsTitle = styled.h1`
   font-size: 2.4rem;
   text-align: center;
   color: #263238;
+  @media (width <= 688px) {
+    font-size: 2rem;
+  }
 `;
 
 export const TestimonialParaph = styled.p`
