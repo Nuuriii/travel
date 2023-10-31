@@ -26,10 +26,17 @@ export const Information = styled.div`
   padding: 5rem 2rem;
   display: flex;
   justify-content: space-between;
+  @media (width <= 788px) {
+    margin: 5rem 2rem 0rem 2rem;
+    flex-direction: column;
+  }
 `;
 
 export const IconWrapper = styled.div`
   display: flex;
+  @media (width <= 788px) {
+    margin: 0 0 2rem 0;
+  }
   img {
     height: 4rem;
     width: auto;
@@ -38,12 +45,19 @@ export const IconWrapper = styled.div`
 
 export const LinkContainer = styled.div`
   display: flex;
+  @media (width <= 788px) {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 `;
 
 export const LinkItem = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 3rem 0 0;
+  @media (width <= 788px) {
+    margin: 0 3rem 2rem 0;
+  }
 `;
 
 export const LinkTitle = styled.h3`
