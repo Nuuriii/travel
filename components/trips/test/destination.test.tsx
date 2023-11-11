@@ -1,6 +1,5 @@
 import { screen, render } from "@testing-library/react";
 import Destination from "../destination/destination";
-import exp from "constants";
 
 describe("check text and image in Destination component", () => {
   test("check text", () => {

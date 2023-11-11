@@ -1,6 +1,5 @@
 import { screen, render } from "@testing-library/react";
 import Navbar from "../navbar";
-import exp from "constants";
 
 describe("testing Navbar", () => {
   test("check text", () => {
